@@ -1,0 +1,6 @@
+dialect=mssql
+driverClass=com.microsoft.sqlserver.jdbc.SQLServerDriver
+url=jdbc:sqlserver://${etracs18db_host};DatabaseName=${etracs18db_name}
+user=${etracs18db_user}
+pwd=${etracs18db_pass}
+maxPoolSize=100
