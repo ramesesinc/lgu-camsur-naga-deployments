@@ -1,0 +1,29 @@
+------------------------------
+2020-05-24: UPGRADE CTC PLUGIN
+------------------------------
+
+------------------------------
+About the Updates
+------------------------------
+Upgrade CTC Plugin from v254 to v255
+
+
+------------------------------
+Procedures
+------------------------------
+01. Open Navicat / SQL Management Studio and connect to v255 etracs database 
+
+02. Execute the following upgrade scripts: 
+
+    * mssql/01_patch_ctc_rulesets.sql
+    * mssql/02_patch_ctc_rules.sql
+
+03. Login to ETRACS client as ADMIN or any user account 
+    that has a role in TREASURY.RULE_AUTHOR 
+
+
+04. Go to "Main Menu-> Rule Management-> CTC Billing Rules"
+
+05. Deploy all the rules 
+
+06. Testing and monitoring of updates...
