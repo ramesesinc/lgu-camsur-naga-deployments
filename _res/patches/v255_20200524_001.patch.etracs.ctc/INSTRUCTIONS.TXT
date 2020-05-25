@@ -22,8 +22,10 @@ Procedures
     that has a role in TREASURY.RULE_AUTHOR 
 
 
-04. Go to "Main Menu-> Rule Management-> CTC Billing Rules"
+04. Go to "Main Menu-> Rule Management-> Community Tax Certificate-> CTC Billing Rules"
 
-05. Deploy all the rules 
+05. Deploy all the rules except for CTC_CORPORATE_PENALTY_COPY
 
-06. Testing and monitoring of updates...
+06. Delete the rule CTC_CORPORATE_PENALTY_COPY 
+
+07. Testing and monitoring of updates...
