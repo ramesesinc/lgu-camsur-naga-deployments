@@ -1,3 +1,7 @@
+use etracs255_naga 
+go 
+
+
 CREATE TABLE [dbo].[ztmpdev_sys_rule] (
 [objid] varchar(50) NOT NULL ,
 [state] varchar(25) NULL ,

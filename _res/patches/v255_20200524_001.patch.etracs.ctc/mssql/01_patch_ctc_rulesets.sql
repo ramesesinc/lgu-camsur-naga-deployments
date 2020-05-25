@@ -1,3 +1,7 @@
+use etracs255_naga 
+go 
+
+
 CREATE TABLE [dbo].[ztmpdev_sys_ruleset] (
 [name] varchar(50) NOT NULL ,
 [title] varchar(160) NULL ,
