@@ -37,7 +37,18 @@ services:
       - "9970:8070"
       - "9960:8060"
     volumes:
-      - ../_custom/images/lgu-logo.png:/webroot/res/images/lgu-logo.png
-      - ../_custom/queue/files/queue.pg:/webroot/files/queue.pg
-      - ../_custom/queue/files/queueing.pg:/webroot/files/queueing.pg
-      - ../_custom/queue/files/queuenumber.pg:/webroot/files/queuenumber.pg
+      - ./dev/css:/webroot/themes/default/css
+      - ./dev/templates:/webroot/themes/default/templates
+      - ./dev/widgets/css:/apps/server/lib/anubis.lib/default/widgets/css
+      - ./dev/files/queue.pg:/webroot/files/queue.pg
+      - ./dev/files/queueing.pg:/webroot/files/queueing.pg
+      - ./dev/files/queuenumber.pg:/webroot/files/queuenumber.pg
+
+      - ../_custom/queue/lgu-logo.png:/webroot/res/images/lgu-logo.png
+      - ../_custom/queue/queue-custom.css:/webroot/themes/default/css/default/queue-custom.css
+      - ../_custom/queue/files/queue.pg/content:/webroot/files/queue.pg/content
+      - ../_custom/queue/files/queue.pg/style_custom:/webroot/files/queue.pg/style_custom
+      - ../_custom/queue/files/queueing.pg/content:/webroot/files/queueing.pg/content
+      - ../_custom/queue/files/queueing.pg/style_custom:/webroot/files/queueing.pg/style_custom
+      - ../_custom/queue/files/queuenumber.pg/content:/webroot/files/queuenumber.pg/content
+      - ../_custom/queue/files/queuenumber.pg/style_custom:/webroot/files/queuenumber.pg/style_custom
